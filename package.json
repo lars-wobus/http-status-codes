@@ -4,7 +4,7 @@
   "description": "HTTP status codes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -14,25 +14,28 @@
     "http",
     "status",
     "rfc",
-	"RFC2295",
-	"RFC2518",
-	"RFC2774",
-	"RFC3229",
-	"RFC4918",
-	"RFC5842",
-	"RFC6585",
-	"RFC7231",
-	"RFC7232",
-	"RFC7233",
-	"RFC7235 ",
-	"RFC7538",
-	"RFC7540",
-	"RFC7725"
+    "RFC2295",
+    "RFC2518",
+    "RFC2774",
+    "RFC3229",
+    "RFC4918",
+    "RFC5842",
+    "RFC6585",
+    "RFC7231",
+    "RFC7232",
+    "RFC7233",
+    "RFC7235 ",
+    "RFC7538",
+    "RFC7540",
+    "RFC7725"
   ],
   "author": "Lars Wobus",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lars-wobus/http-status-codes/issues"
   },
-  "homepage": "https://github.com/lars-wobus/http-status-codes#readme"
+  "homepage": "https://github.com/lars-wobus/http-status-codes#readme",
+  "dependencies": {
+    "mocha": "^3.2.0"
+  }
 }
