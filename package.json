@@ -1,0 +1,38 @@
+{
+  "name": "http-status-codes",
+  "version": "1.0.0",
+  "description": "HTTP status codes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lars-wobus/http-status-codes.git"
+  },
+  "keywords": [
+    "http",
+    "status",
+    "rfc",
+	"RFC2295",
+	"RFC2518",
+	"RFC2774",
+	"RFC3229",
+	"RFC4918",
+	"RFC5842",
+	"RFC6585",
+	"RFC7231",
+	"RFC7232",
+	"RFC7233",
+	"RFC7235 ",
+	"RFC7538",
+	"RFC7540",
+	"RFC7725"
+  ],
+  "author": "Lars Wobus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lars-wobus/http-status-codes/issues"
+  },
+  "homepage": "https://github.com/lars-wobus/http-status-codes#readme"
+}
