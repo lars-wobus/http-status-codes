@@ -1,8 +1,8 @@
 {
-  "name": "http-status-codes",
-  "version": "1.0.0",
+  "name": "http-statuscode",
+  "version": "1.0.1",
   "description": "HTTP status codes",
-  "main": "index.js",
+  "main": "httpStatusCodes.json",
   "scripts": {
     "test": "mocha"
   },
