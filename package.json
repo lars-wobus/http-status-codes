@@ -2,7 +2,7 @@
   "name": "http-statuscode",
   "version": "1.0.0",
   "description": "HTTP status codes",
-  "main": "index.js",
+  "main": "httpStatusCodes.json",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
