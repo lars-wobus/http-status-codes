@@ -1,6 +1,6 @@
 {
   "name": "http-statuscode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "HTTP status codes",
   "main": "httpStatusCodes.json",
   "scripts": {
