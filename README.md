@@ -2,6 +2,39 @@
 
 Single JSON file containing HTTP statuscodes. Based on [iana.org](http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml)
 
+```
+npm install http-statuscode --save
+```
+
+## Example use
+The server listens for incomming GET requests.
+
+```javascript
+var express = require('express'); // express 4.x-API
+var http = require('http-statuscode');
+
+var app = express();
+
+app.get('/', function(req, res){
+  res.send('Hello world');
+});
+
+app.get('/:anything?', function(req, res){
+  res.status(http.NOT_IMPLEMENTED).send('Route not fully implemented yet');
+});
+
+app.listen(3000);
+```
+
+| Request | Response status | Response message |
+| ------ | ------ | ------ |
+| GET http://localhost:3000/ | 200 | Hello World |
+| GET http://localhost:3000/a | 501 | Route not fully implemented yet |
+| GET http://localhost:3000/(...)| 501 | Route not fully implemented yet |
+
+
+## Statuscodes
+
 + 1xx: Informational - Request received, continuing process
 + 2xx: Success - The action was successfully received, understood, and accepted
 + 3xx: Redirection - Further action must be taken in order to complete the request
@@ -86,29 +119,3 @@ Single JSON file containing HTTP statuscodes. Based on [iana.org](http://www.ian
 | 510 | NOT_EXTENDED | [RFC2774, SECTION 7] |
 | 511 | NETWORK_AUTHENTICATION_REQUIRED | [RFC6585, SECTION 6] |
 | 512-599 | >> UNASSIGNED << |  |
-
-## Example use
-The server listens for incomming GET requests. Express 4.X-API was used.
-
-```javascript
-var express = require('express');
-var http = require('http-statuscode');
-
-var app = express();
-
-app.get('/', function(req, res){
-  res.send('Hello world');
-});
-
-app.get('/:anything?', function(req, res){
-  res.status(http.NOT_IMPLEMENTED).send('Route not fully implemented yet');
-});
-
-app.listen(3000);
-```
-
-| Request | Response status | Response message |
-| ------ | ------ | ------ |
-| GET http://localhost:3000/ | 200 | Hello World |
-| GET http://localhost:3000/a | 501 | Route not fully implemented yet |
-| GET http://localhost:3000/(...)| 501 | Route not fully implemented yet |
